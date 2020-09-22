@@ -1,6 +1,6 @@
 #  FontSelector (フォントセレクター) - SwiftUI
 
-<img width="500" alt="image" src="https://github.com/mszmagic/FontSelector/blob/master/social-image.png?raw=true">
+<img width="500" alt="image" src="https://raw.githubusercontent.com/mszmagic/FontSelector/main/social-image.png">
 
 これは、SwiftUIで書かれたフォントセレクターです。このフォントセレクターを表示させると、ユーザーがフォントを選ぶことができます。
 
