@@ -102,7 +102,7 @@ public struct FontSelector: View {
                                 Spacer()
                                 Image(systemName: "arrow.right.circle.fill")
                                     .foregroundColor(textColor)
-                                    .font(.title2)
+                                    .font(.system(size: 21))
                             }
                         })
                         .buttonStyle(PlainButtonStyle())
