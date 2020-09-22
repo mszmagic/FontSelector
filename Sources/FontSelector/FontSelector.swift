@@ -86,18 +86,24 @@ public struct FontSelector: View {
                             onFontSelected(fontName)
                             presentationMode.wrappedValue.dismiss()
                         }, label: {
-                            VStack(alignment: .leading, spacing: nil, content: {
-                                Text(demoText)
-                                    .font(.init(UIFont(name: fontName, size: 30) ?? .systemFont(ofSize: 15)))
-                                    .padding(.top, 10)
+                            HStack {
+                                VStack(alignment: .leading, spacing: nil, content: {
+                                    Text(demoText)
+                                        .font(.init(UIFont(name: fontName, size: 30) ?? .systemFont(ofSize: 15)))
+                                        .padding(.top, 10)
+                                        .foregroundColor(textColor)
+                                    // Display a subtitle, if necessary
+                                    if options.contains(.displayFontNameAsSubtitle) {
+                                        Text(fontName)
+                                            .font(.headline)
+                                            .padding(.bottom, 10)
+                                    }
+                                })
+                                Spacer()
+                                Image(systemName: "arrow.right.circle.fill")
                                     .foregroundColor(textColor)
-                                // Display a subtitle, if necessary
-                                if options.contains(.displayFontNameAsSubtitle) {
-                                    Text(fontName)
-                                        .font(.headline)
-                                        .padding(.bottom, 10)
-                                }
-                            })
+                                    .font(.title2)
+                            }
                         })
                         .buttonStyle(PlainButtonStyle())
                     })
