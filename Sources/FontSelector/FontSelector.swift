@@ -66,7 +66,7 @@ public struct FontSelector: View {
                     HStack {
                         Image(systemName: "magnifyingglass")
                             .foregroundColor(.gray)
-                        TextField("Search for a font", text: $searchText)
+                        TextField("フォントの検索", text: $searchText)
                             .cornerRadius(8)
                     }
                     
