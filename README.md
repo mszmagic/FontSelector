@@ -36,6 +36,15 @@ public init(onFontSelected: @escaping (String) -> Void, demoText: String = "あ 
 
 こちらは、パラメーターの説明です：
 
+```swift
+- onFontSelected: この機能はユーザーがフォントを選択すると呼び出されます。
+- demoText: これは表示デモ目的のためのテキスト内容です。デフォルト値は `あ ア 亜` に設定されています
+- displayAllLocalFonts: この変数を真に設定すると、すべてのシステムフォントをメニューに表示します。
+- customFontNames: フォントの一部のみ表示したい場合は、`displayAllLocalFonts` を偽に設定し、フォントを選択して `customFontNames` に追加してください。
+- options: 上の `FontSelectorOption` コードで指定されているように、複数の選択肢から選択することができます。
+- textColor: 文字の色
+```
+
 
 ## インストール方法：
 
